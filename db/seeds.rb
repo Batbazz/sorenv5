@@ -1,7 +1,43 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+[
+  Project.create(
+    text: "assets/Sp2txt-768.png",
+    image: "assets/Sp2img-768.png",
+    illustration: "assets/Sp3-1920.png"
+  ),
+
+  Project.create(
+    text: "assets/Sp4txt-768.png",
+    image: "assets/Sp4img-768.png",
+    illustration: "assets/Sp5-1920.png"
+  ),
+
+  Project.create(
+    text: "assets/Sp6txt-768.png",
+    image: "assets/Sp6img-768.png",
+    illustration: "assets/Sp7-1920.png"
+  ),
+
+  Project.create(
+    text: "assets/Sp8txt-768.png",
+    image: "assets/Sp8img-768.png",
+    illustration: "assets/Sp9-1920.png"
+  ),
+
+  Project.create(
+    text: "assets/Sp10txt-768.png",
+    image: "assets/Sp10img-768.png",
+    illustration: "assets/Sp11-1920.png"
+  ),
+
+  Project.create(
+    text: "assets/Sp12txt-768.png",
+    image: "assets/Sp12img-768.png",
+    illustration: "assets/Sp13-1920.png"
+  ),
+
+  Project.create(
+    text: "assets/Sp14txt-768.png",
+    image: "assets/Sp14img-768.png",
+    illustration: "assets/Sp15-1920.png"
+  )
+]
