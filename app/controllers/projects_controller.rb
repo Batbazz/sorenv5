@@ -1,6 +1,6 @@
-class ProjectController < ApplicationController
+class ProjectsController < ApplicationController
   def create
-    Project.create(project_params)
+    Projects.create(projects_params)
   end
 
   def banner
@@ -12,7 +12,7 @@ class ProjectController < ApplicationController
 
   private
 
-  def project_params
+  def projects_params
     params.require(:text, :image, :illustration).permit
   end
 
