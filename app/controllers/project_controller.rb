@@ -3,6 +3,12 @@ class ProjectController < ApplicationController
     Project.create(project_params)
   end
 
+  def banner
+  end
+
+  def footer
+  end
+
 
   private
 
