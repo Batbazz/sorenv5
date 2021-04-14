@@ -1,7 +1,9 @@
 <h1>HOMEPAGE</h1>
 
 <%= render "shared/banner" %>
-<%= render "shared/create" %>
+<% @projects.each do |project| %>
+  <%= render partial: "shared/project", locals: { project: project } %>
+<% end %>
 <%= render "shared/cursor" %>
 <%= render "shared/mail" %>
 <%= render "shared/footer" %>
