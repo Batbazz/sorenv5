@@ -1,13 +1,19 @@
 .footer {
   display: flex;
-  justify-content: center;
   position: relative;
+  left: 8%;
   ._elements {
     display: flex;
+    width: 100%;
+    justify-content: center;
   }
   ._contact-card {
+    width: 30%;
     img {
       box-shadow: 20px 0px 150px rgba(0,0,0,0.5);
     }
+  }
+  ._merci-signature {
+    width: 30%;
   }
 }
