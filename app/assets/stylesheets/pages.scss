@@ -2,4 +2,7 @@ body {
   overflow: auto;
   background-color: #008fd5 !important;
   scroll-behavior: smooth;
+  img {
+    max-width: 100%;
+  }
 }
