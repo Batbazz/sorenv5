@@ -1,43 +1,11 @@
 <h1>Mail</h1>
 
+<%= render "shared/flashes" %>
+<%= render "shared/modal" %>
+
 <div class="contact">
 <!-- Button trigger modal -->
-  <a type="button" class="buttonicon" style="fixed" data-toggle="modal" data-target="#exampleModal">
+  <a type="button" class="buttonicon" style="fixed" data-toggle="modal" data-target="#ModalID">
     <img src="./assets/Icon-Mail.png">
   </a>
-  <!-- Modal -->
-  <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="animate__animated animate__fadeInUp modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Contactez-moi !</h5>
-        </div>
-        <div class="modal-body">
-          <div align="center">
-            <%= simple_form_for @contact do |f| %>
-            <div class="row1">
-              <div class="full_name">
-                <%= f.input :first_name, label: false, placeholder: " Prénom", error: "" %>
-                <%= f.input :last_name, label: false, placeholder: " Nom", error: "" %>
-              </div>
-            </div>
-            <div class="row2">
-              <div class="email">
-                <%= f.input :email, label: false, placeholder: " Email", error: "" %>
-              </div>
-            </div>
-            <div class="row3">
-              <div class="textmessage">
-                <%= f.input :message, label: false, placeholder: " Votre message", :as => :text, error: "" %>
-              </div>
-            </div>
-            <a id="btnsubmit">
-              <%= f.button :submit, 'Envoyer' %>
-            </a>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>

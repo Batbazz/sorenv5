@@ -1,0 +1,35 @@
+<!-- Modal -->
+<div class="modal" id="ModalID" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="animate__animated animate__fadeInUp modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">Contactez-moi !</h5>
+      </div>
+      <div class="modal-body">
+        <div align="center">
+          <%= simple_form_for @contact do |f| %>
+          <div class="row1">
+            <div class="full_name">
+              <%= f.input :first_name, label: false, placeholder: " Prénom", error: "" %>
+              <%= f.input :last_name, label: false, placeholder: " Nom", error: "" %>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="email">
+              <%= f.input :email, label: false, placeholder: " Email", error: "" %>
+            </div>
+          </div>
+          <div class="row3">
+            <div class="textmessage">
+              <%= f.input :message, label: false, placeholder: " Votre message", :as => :text, error: "" %>
+            </div>
+          </div>
+          <a id="btnsubmit">
+            <%= f.button :submit, 'Envoyer' %>
+          </a>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
