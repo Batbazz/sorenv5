@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'b.rieu.0@gmail.com'
+  default from: 'contact@noctulescence.com' # A changer pour contact@noctulescence.com lors de la production
   layout 'mailer'
 end
