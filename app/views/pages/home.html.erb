@@ -1,7 +1,5 @@
 <%= render "shared/banner" %>
-<% @projects.each do |project| %>
-  <%= render partial: "shared/project", locals: { project: project } %>
-<% end %>
+<%= render "shared/projects" %>
 <%= render "shared/cursor" %>
 <%= render "shared/mail" %>
 <%= render "shared/footer" %>
