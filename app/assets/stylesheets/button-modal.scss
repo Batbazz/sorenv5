@@ -1,0 +1,14 @@
+.buttonModal {
+  z-index: 5;
+  position: fixed;
+  bottom: 14rem;
+  left: 48%;
+  opacity: 0.4;
+  transition: 0.3s;
+  img {
+    width: 9vw;
+  }
+}
+.buttonModal:hover {
+  opacity: 1;
+}

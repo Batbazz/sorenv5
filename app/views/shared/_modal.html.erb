@@ -1,24 +1,27 @@
 <!-- Modal -->
-<%= turbo_frame_tag "contact" do %>
-  <%= simple_form_for @contact do |f| %>
-    <div class="row1">
-      <div class="full_name">
-        <%= f.input :first_name, label: false, placeholder: " Prénom", error: "" %>
-        <%= f.input :last_name, label: false, placeholder: " Nom", error: "" %>
+<turbo_frame_tag id=contact>
+  <div id="modalId" class="modal">
+    <div class="animate__animated animate__fadeInUp">
+      <div class="modal-content">
+        <%= turbo_frame_tag "contact" do %>
+          <%= simple_form_for @contact do |f| %>
+            <div class="full_name">
+              <%= f.input :first_name, label: false, placeholder: " Prénom", error: "" %>
+              <%= f.input :last_name, label: false, placeholder: " Nom", error: "" %>
+            </div>
+            <div class="email">
+              <%= f.input :email, label: false, placeholder: " Email", error: "" %>
+            </div>
+            <div class="textmessage">
+              <%= f.input :message, label: false, placeholder: " Votre message", :as => :text, error: "" %>
+            </div>
+            <a id="btnsubmit">
+              <%= f.button :submit, 'Envoyer' %>
+            </a>
+          <% end %>
+        <% end %>
       </div>
     </div>
-    <div class="row2">
-      <div class="email">
-        <%= f.input :email, label: false, placeholder: " Email", error: "" %>
-      </div>
-    </div>
-    <div class="row3">
-      <div class="textmessage">
-        <%= f.input :message, label: false, placeholder: " Votre message", :as => :text, error: "" %>
-      </div>
-    </div>
-    <a id="btnsubmit">
-      <%= f.button :submit, 'Envoyer' %>
-    </a>
-  <% end %>
-<% end %>
+  </div>
+</turbo_frame_tag>
+
