@@ -10,13 +10,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= stylesheet_pack_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "tailwind" %>
+    <%= stylesheet_link_tag "inter-font" %>
     <%= javascript_pack_tag 'application', defer: true %>
-
-    <%# <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
   <body>
+    <div data-controller="hello">
+      <input data-hello-target="name" type="text">
+      <button data-action="hello#greet">Greet</button>
+    </div>
+
     <%= yield %>
   </body>
 </html>
