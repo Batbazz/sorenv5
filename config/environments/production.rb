@@ -25,6 +25,11 @@ Rails.application.configure do
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
+  # Compressor for Tailwind UI
+  # config.assets.css_compressor = Tailwindcss::Compressor.new(files_with_class_names: Rails.root.glob("app/somewhere/**/*.*"))
+
+
+
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 

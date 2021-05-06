@@ -37,6 +37,9 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'cloudinary', '~> 1.16.0'
 
+gem "view_component", require: "view_component/engine"
+
+gem "tailwindcss-rails", "~> 0.3.3"
 
 
 
