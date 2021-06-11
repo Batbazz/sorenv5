@@ -5,6 +5,8 @@ require("@hotwired/turbo-rails")
 
 import "controllers"
 import "./modal"
+import "@fortawesome/fontawesome-free/css/all"
+import "stylesheets/application"
 
 // import { $ } from "@rails/ujs"
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -14,4 +16,3 @@ import "./modal"
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import "stylesheets/application"
