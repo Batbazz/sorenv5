@@ -19,7 +19,10 @@ btn.addEventListener('click', (e) => {
 // When the user clicks on the submit button, it closes the modal and animate it while sending mail
 btnsubmit.addEventListener('click', (e) => {
   modalid.classList.add('animate__animated', 'animate__backOutUp', 'animate__faster');
-  document.location.reload();
+
+
+
+  // document.location.reload();
 });
 
 // When the user clicks anywhere outside of the modal, it closes it
