@@ -1,34 +1,32 @@
 <!-- Modal -->
-<turbo_frame_tag id=contact>
+<div id=contact>
   <div id="modalId" class="modal">
     <div class="animate__animated animate__fadeInUp">
       <div class="_modal-content">
         <div class="_modal-header">
           <p>Contactez-moi !</p>
-          <%= turbo_frame_tag "contact" do %>
-            <%= simple_form_for @contact do |f| %>
-              <div class="_full_name">
-                <div class="_first_name">
-                  <%= f.input :first_name, label: false, placeholder: " Prénom", error: "" %>
-                </div>
-                <div class="_last_name">
-                  <%= f.input :last_name, label: false, placeholder: " Nom", error: "" %>
-                </div>
+          <%= simple_form_for @contact do |f| %>
+            <div class="_full_name">
+              <div class="_first_name">
+                <%= f.input :first_name, label: false, placeholder: " Prénom", error: "" %>
               </div>
-              <div class="_email">
-                <%= f.input :email, label: false, placeholder: " Email", error: "" %>
+              <div class="_last_name">
+                <%= f.input :last_name, label: false, placeholder: " Nom", error: "" %>
               </div>
-              <div class="_textmessage">
-                <%= f.input :message, label: false, placeholder: " Votre message", :as => :text, error: "" %>
-              </div>
-              <a id="_btnsubmit">
-                <%= f.button :submit, 'Envoyer' %>
-              </a>
-            <% end %>
+            </div>
+            <div class="_email">
+              <%= f.input :email, label: false, placeholder: " Email", error: "" %>
+            </div>
+            <div class="_textmessage">
+              <%= f.input :message, label: false, placeholder: " Votre message", :as => :text, error: "" %>
+            </div>
+            <a id="_btnsubmit">
+              <%= f.button :submit, 'Envoyer' %>
+            </a>
           <% end %>
         </div>
       </div>
     </div>
   </div>
-</turbo_frame_tag>
+</div>
 
