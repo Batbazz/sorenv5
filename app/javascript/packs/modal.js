@@ -20,8 +20,6 @@ btn.addEventListener('click', (e) => {
 btnsubmit.addEventListener('click', (e) => {
   modalid.classList.add('animate__animated', 'animate__backOutUp', 'animate__faster');
 
-
-
   // document.location.reload();
 });
 
